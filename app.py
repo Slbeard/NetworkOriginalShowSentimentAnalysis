@@ -11,7 +11,7 @@ except ImportError:
     raise SystemExit("Exiting due to missing dependencies.")
 
 # Clear cache
-st.cache_data.clear()
+# st.cache_data.clear()
 
 # Load DataFrame from pickle
 df = pd.read_pickle("tv_show_sentiment.pk1")
