@@ -3,12 +3,7 @@ import streamlit as st
 import pandas as pd
 import sys
 import subprocess
-try:
-    import plotly.express as px
-except ImportError:
-    print("Plotly is not installed. Please install the required dependencies.")
-    # Optional: exit the program or handle the error more gracefully
-    raise SystemExit("Exiting due to missing dependencies.")
+import plotly.express as px
 
 # Clear cache
 # st.cache_data.clear()
