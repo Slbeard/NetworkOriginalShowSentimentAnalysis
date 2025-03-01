@@ -1,8 +1,6 @@
 
 import streamlit as st
 import pandas as pd
-import sys
-import subprocess
 import plotly.express as px
 
 # Clear cache
