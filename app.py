@@ -6,10 +6,9 @@ import subprocess
 try:
     import plotly.express as px
 except ImportError:
-    print("Plotly not found. Installing...")
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
-    import plotly.express as px
+    print("Plotly is not installed. Please install the required dependencies.")
+    # Optional: exit the program or handle the error more gracefully
+    raise SystemExit("Exiting due to missing dependencies.")
     
 # DataFrame should be in memory, don't read from a file
 df = pd.DataFrame({
