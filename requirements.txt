@@ -1,5 +1,3 @@
 pandas
 streamlit
-sys
-subprocess
-plotly
+plotly==5.0.0
