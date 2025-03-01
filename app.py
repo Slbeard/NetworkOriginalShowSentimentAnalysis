@@ -41,6 +41,3 @@ worst_show = df.loc[df["Average Sentiment"].idxmin()]
 
 st.success(f"Most Positively Received: {best_show['Show']} ({best_show['Average Sentiment']:.2f})")
 st.error(f"Most Negatively Received: {worst_show['Show']} ({worst_show['Average Sentiment']:.2f})")
-
-# Run the Streamlit app
-!streamlit run app.py
