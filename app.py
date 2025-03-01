@@ -1,8 +1,14 @@
 
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-
+try:
+    import plotly.express as px
+except ImportError:
+    print("Plotly not found. Installing...")
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
+    import plotly.express as px
+    
 # DataFrame should be in memory, don't read from a file
 df = pd.DataFrame({
     'Show': ['Show1', 'Show2', 'Show3', 'Show4'],
